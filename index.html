@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden X Picks</title>
+    <style>
+      :root {
+        --gold: #ffd700;
+        --green: #006400; /* Dark Green */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #333;
+      }
+      header {
+        background: var(--green);
+        color: var(--gold);
+        padding: 1rem;
+        text-align: center;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        padding: 2rem;
+      }
+      .product {
+        background: #ffffff;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .product:hover {
+        transform: translateY(-4px);
+      }
+      .product img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .product h3 {
+        margin: 0.5rem 0;
+        color: var(--green);
+      }
+      .product p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .buy-button {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: var(--gold);
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+      .buy-button:hover {
+        background: #e6c200;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Golden X Picks</h1>
+      <p>Curated finds and top recommendations — all in one place.</p>
+    </header>
+    <main class="products">
+      <div class="product">
+        <img src="https://www.petexpress.com.ph/cdn/shop/files/PETYUMDryFoodforCats.jpg?v=1697170771" alt="Petyum Cat Dry Food" />
+        <h3>Petyum Cat Dry Food</h3>
+        <p>Nutritious and crunchy cat food for your furry friend.</p>
+        <a class="buy-button" href="https://www.tiktok.com" target="_blank">Buy via TikTok</a>
+      </div>
+      <div class="product">
+        <img src="https://cdn.shopify.com/s/files/1/0571/9992/2887/products/WhiskasWetFoodPouch.jpg?v=1669021975" alt="Whiskas Wet Food" />
+        <h3>Whiskas Wet Food</h3>
+        <p>Delicious and moist food that cats love!</p>
+        <a class="buy-button" href="https://www.tiktok.com" target="_blank">Buy via TikTok</a>
+      </div>
+      <div class="product">
+        <img src="https://www.petexpress.com.ph/cdn/shop/products/PE-007541_600x.jpg?v=1642408997" alt="Petyum Cat Toy" />
+        <h3>Petyum Cat Toy</h3>
+        <p>Interactive toy to keep your cat happy and playful.</p>
+        <a class="buy-button" href="https://www.tiktok.com" target="_blank">Buy via TikTok</a>
+      </div>
+      <div class="product">
+        <img src="https://www.petexpress.com.ph/cdn/shop/files/PE-007661_600x.jpg?v=1639376973" alt="Pet Glove Wipes" />
+        <h3>Pet Glove Wipes</h3>
+        <p>Easy-to-use grooming glove wipes for quick cleanups.</p>
+        <a class="buy-button" href="https://vt.tiktok.com/ZSkxnhMyV/" target="_blank">Buy via TikTok</a>
+      </div>
+    </main>
+  </body>
+</html>
